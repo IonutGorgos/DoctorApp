@@ -25,9 +25,9 @@ class RomedicSpider(Spider):
     def parse_items(self, response):
         shortdes = response.xpath('//div[@class="shortdes"]')
         for short in shortdes:
-            yield {
-                'Nume doctor': short.xpath('.//b/a/text()').extract_first(),
-            }
+            link_doctor = short.xpath('.//b/a/@href').extract_first()
+            if link_doctor is not None:
+                yield Request(response.urljoin(link_doctor), callback=self.parse_info)
             next_page_url = response.xpath('//div[@class="paginatie"]/a[@class="pag_sel"]/@href').extract_first()
             if next_page_url is not None:
                 yield Request(response.urljoin(next_page_url), callback=self.parse_paginatie)
@@ -35,12 +35,27 @@ class RomedicSpider(Spider):
     def parse_paginatie(self, response):
         shortdes = response.xpath('//div[@class="shortdes"]')
         for short in shortdes:
-            yield {
-                'Nume doctor': short.xpath('.//b/a/text()').extract_first(),
-            }
+            link_doctor = short.xpath('.//b/a/@href').extract_first()
+            if link_doctor is not None:
+                yield Request(response.urljoin(link_doctor), callback=self.parse_info)
             next_page_url = response.xpath('//div[@class="paginatie"]/a[@class="pag_sel"]/@href').extract_first()
             if next_page_url is not None:
                 yield Request(response.urljoin(next_page_url), callback=self.parse_paginatie)
+
+    def parse_info(self, response):
+        div = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]')
+        loc = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]/span[@class="style6"]/following-sibling::text()').extract_first()
+        specialitate = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]/br/following-sibling::span[1]/following-sibling::text()').extract_first()
+        nume_doctor = response.xpath('//div[@class="articol_text"]/h1/text()').extract_first()
+        for d in div:
+            # print d.xpath('.//div[@class="t"]/text()').extract_first()
+            yield {
+                'nume': nume_doctor,
+                'contact': d.xpath('.//div[@class="t"]/text()').extract_first(),
+                'loc_munca': loc,
+                'specialitate': specialitate,
+            }
+
 
 
 
