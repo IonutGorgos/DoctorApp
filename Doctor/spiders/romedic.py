@@ -44,14 +44,18 @@ class RomedicSpider(Spider):
 
     def parse_info(self, response):
         div = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]')
-        loc = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]/span[@class="style6"]/following-sibling::text()').extract_first()
+        loc_munca = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]/a').extract_first()
+        if loc_munca is not None:
+            loc = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]/a/text()').extract_first()
+        else:
+            loc = response.xpath(
+                '//div[@class="articol_text"]/div[@class="box_1"]/span[@class="style6"]/following-sibling::text()').extract_first()
         specialitate = response.xpath('//div[@class="articol_text"]/div[@class="box_1"]/br/following-sibling::span[1]/following-sibling::text()').extract_first()
         nume_doctor = response.xpath('//div[@class="articol_text"]/h1/text()').extract_first()
-        for d in div:
-            # print d.xpath('.//div[@class="t"]/text()').extract_first()
+        for contact in div:
             yield {
                 'nume': nume_doctor,
-                'contact': d.xpath('.//div[@class="t"]/text()').extract_first(),
+                'contact': contact.xpath('.//div[@class="t"]/text()').extract_first(),
                 'loc_munca': loc,
                 'specialitate': specialitate,
             }
