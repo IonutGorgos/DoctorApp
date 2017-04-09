@@ -1,0 +1,19 @@
+[
+{"nume": "\n\t\t\t\t\t\t\tHorvath Gilda Luise\t\t\t\t\t\t", "specialitate": "Alergolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tIndrie Madalina\t\t\t\t\t\t", "specialitate": "Nutritionist", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tGabriela Mitrasca\t\t\t\t\t\t", "specialitate": "Dentist", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tPetrescu Ruxandra\t\t\t\t\t\t", "specialitate": "Medic pediatru", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tCalcatinge Rodica Adriana\t\t\t\t\t\t", "specialitate": "Psiholog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tMiruna Nicolae\t\t\t\t\t\t", "specialitate": "Oftalmolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tVacaras Vitalie\t\t\t\t\t\t", "specialitate": "Neurolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": "Spitalul Clinic judetean de urgenta Cluj-Napoca"},
+{"nume": "\n\t\t\t\t\t\t\tIlie Onu\t\t\t\t\t\t", "specialitate": "Fizioterapeut", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tPop Corina Elena\t\t\t\t\t\t", "specialitate": "Dermatolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tCâsu Mihai\t\t\t\t\t\t", "specialitate": "Psihiatru", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tGradinaru Dragos\t\t\t\t\t\t", "specialitate": "Ginecolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": "Regina Maria"},
+{"nume": "\n\t\t\t\t\t\t\tCopcea Adrian\t\t\t\t\t\t", "specialitate": "Nutritionist", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tDiana Enăchescu\t\t\t\t\t\t", "specialitate": "Medic de familie", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tTintoiu Ion\t\t\t\t\t\t", "specialitate": "Medic cardiolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tResit Ayla\t\t\t\t\t\t", "specialitate": "Dentist", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tAndrei Ioan Bogdan\t\t\t\t\t\t", "specialitate": "Ortoped", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": null},
+{"nume": "\n\t\t\t\t\t\t\tCauni Victor\t\t\t\t\t\t", "specialitate": "Urolog", "contact": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\n\t\t\t\t\t", "loc_munca": "Spitalul Clinic de urgenta Sf. Ioan"}
+]
