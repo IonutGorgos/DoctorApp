@@ -12,12 +12,15 @@ class RomedicSpider(scrapy.Spider):
     def parse(self, response):
         specializari = response.xpath('//ul[@class="col2v1"]')
         for specializare in specializari:
-            spec = str(specializare.xpath('.//li/a/text()').extract())
-            # spec = re.sub(r'\s{3,}|[\r\n\t]', ' ', spec)
-            link = specializare.xpath('//li/a/@href').extract()
-            if link is not None:
-                yield Request(response.urljoin(link))
-            yield {
-                'Specializare': spec,
-                'Link': link,
-            }
+            specializare2 = specializare.xpath('.//li/a/text()').extract()
+            for spec in specializare2:
+                spec = re.sub(r'\s{2,}|[\n\t]', '', spec)
+                yield {
+                    'Specializare': spec,
+                }
+            link = specializare.xpath('.//li/a/@href').extract()
+            for l in link:
+                if l is not None:
+                    yield Request(response.urljoin(l))
+
+
